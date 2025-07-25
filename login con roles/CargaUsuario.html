@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Carga de Usuarios</title>
+</head>
+<body>
+    
+    <form method="post"  action="guardausuario.php">
+            
+            <h1> Carga de Usuarios </h1>
+            <br>
+
+            <label>Correo Electronico </label>
+            <input type="text" name="Usuario">
+            <br>
+
+            <label>Clave usuario</label>
+            <input type="text" name="Clave">
+            <br>
+
+            <label>Rol Usuario </label>
+            <select name="Rol">
+                <option value="1">Rol 1</option>
+                <option value="2">Rol 2</option>
+                <option value="3">Rol 3</option>
+
+            </select>
+            <br>
+
+            <input  type="submit" name="enviar" Value="Guardar">
+            <input  type="reset"  name="reset"  Value="Cancelar">
+
+    </form>
+</body>
+</html>
