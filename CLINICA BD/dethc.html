@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de Historia Clínica</title>
+</head>
+<body>
+    <h2>Agregar Detalle a Historia Clínica</h2>
+    
+    <div class="info-historia">
+        <p><strong>Paciente:</strong> <?php echo $historia['nombre_paciente']; ?></p>
+        <p><strong>Fecha de apertura:</strong> <?php echo $historia['fecha_apertura']; ?></p>
+        <p><strong>Motivo de consulta:</strong> <?php echo $historia['motivo_consulta']; ?></p>
+    </div>
+    
+    <form action="dethc_variables.php" method="post">
+        <input type="hidden" name="id_historia" value="<?php echo $id_historia; ?>">
+        
+        <section class="form-register">    
+            <h3>Nuevo Detalle de Consulta</h3>
+
+            <br>
+            <label>Profesional</label>
+            <input type="text" name="id_profesional">
+                
+            <br>
+            
+            <label>Fecha y hora de consulta</label>
+            <input class="controls" type="datetime-local" name="fecha_consulta" required value="<?php echo date('Y-m-d\TH:i'); ?>">
+            <br>
+            
+            <label>Observaciones</label>
+            <textarea class="controls" name="observaciones" rows="4" required></textarea>
+            <br>
+            
+            <label>Receta</label>
+            <textarea class="controls" name="receta" rows="4"></textarea>
+            <br>
+            
+            <label>Estudios solicitados</label>
+            <textarea class="controls" name="estudios_solicitados" rows="4"></textarea>
+            <br>
+            
+            <input class="botons" type="submit" name="submit" value="Guardar">
+            <input class="botons" type="reset" name="reset" value="Cancelar">
+        </section>
+    </form>
+</body>
+</html>

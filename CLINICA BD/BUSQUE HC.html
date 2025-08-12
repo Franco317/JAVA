@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Búsqueda de Historias Clínicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        select, input, button {
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            width: 100%;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Búsqueda de Historias Clínicas</h2>
+        <form action="BUSQUE HC.php" method="GET">
+            <div class="form-group">
+                <label for="option">Buscar por:</label>
+                <select name="option" id="option">
+                    <option value="1">Nombre del Paciente</option>
+                    <option value="2">Apellido del Paciente</option>
+                    <option value="3">Diagnóstico</option>
+                    <option value="4">Tratamiento</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="Buscar">Texto a buscar:</label>
+                <input type="text" name="Buscar" id="Buscar" placeholder="Ingrese el texto a buscar">
+            </div>
+            <div class="form-group">
+                <button type="submit">Buscar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

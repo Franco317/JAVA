@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario pacientes</title>
+</head>
+<body> 
+    <!--
+        agregue  class="controls" y class="botons"  en cada input que distinga las funciones 
+        y a la etiqueta <section> le doy una clase que tenga el registro del formulario
+    -->
+<section class="form-register">    
+    
+<form action="recibepaciente.php" method="post">
+    
+    <h2>INGRESAR DATOS DEL PACIENTE </h2>
+    <label>
+        Nombre
+    </label>
+    <input class="controls" type="text" name="Nombre">
+    <br>
+    <label>
+        Apellido 
+    </label>
+    <input class="controls" type="text" name="Apellido">
+    
+    <br>
+    <label>
+        DNI
+    </label>
+    <input class="controls" type="number" name="DNI"> 
+   
+    <br>
+    <label>
+       FecNac 
+    </label>
+    <input class="controls" type="date" name="FecNac">
+
+
+    <br>
+    <label >Telefono  </label>
+    <input  class="controls" type="number" name="Telefono" placeholder="351.." />
+    <br>
+    <label> Email </label>
+    <input  class="controls" type="text" name="Email"/>
+
+    <input class="botons"  type="submit" name="submint" value="Guardar"/>
+    <input class="botons" type="reset" name="reset" value="cancelar">
+</form>
+
+
+
+
+    
+</body>
+</html>

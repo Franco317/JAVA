@@ -1,0 +1,9 @@
+Este Proyecto fue hecho con xampp en entorno local , por lo que para que  todos los codigos funcionen ,  en la url se debe borrar htdocs/ y poner localhost/
+NO PUEDE buscar un paciente sin antes haber cargado la historia clinica de este y luego podra cargar los detalles de la historia clinica , sino no
+para guardar una historia clinica cambiar la extension de la url hc.html a hc.php , asi puede seleccionar el paciente
+
+para guardar un profesional se debe cambiar la extension de la url form profesional.html a form profesional.php , asi puede seleccionar la especialidad 
+En vista_doctor.html se debe cambiar la extension a vista_doctor.php para seleccionar un paciente si no seleccionas ninguno te va a saltar error 
+en vista doctor podes ver los datos personales del pasciente , su historia clinicas y podes agregar un detalle 
+
+No se puede encontrar un paciente en el  listado si no tiene una historia clinica ya ingresada    
