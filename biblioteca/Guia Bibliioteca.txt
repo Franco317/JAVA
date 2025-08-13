@@ -1,0 +1,19 @@
+Este Proyecto fue hecho con xampp en entorno local , por lo que para que  todos los codigos funcionen ,  en la url se debe borrar htdocs/ y poner localhost/
+
+Es un proyecto en el que vimos como relacionar las bases de datos , html,css con php y mysql . consta de varios formularios pero no un Login y tampoco roles pero seria mas que nada para una mini biblioteca
+Tambien vimos busqueda por filtro 
+NO PUEDE guardar un prestamo sin antes haber cargaado datos en las anteriores tablas "Libros" y "Usuarios"
+para guardar un prestamo  se debe cambiar la extension de la url form prestamos.html a form prestamos.php , asi puede seleccionar el usuario al que se le esta prestando los libros 
+
+En formuario libros.html se debe cambiar la extension a formulario libros.php para seleccionar un autor si no seleccionas ninguno te va a saltar error 
+
+Comprobacion de si funca los formularios mientras los ordeno 
+
+Usuarios V
+Prestamos V
+Autores V
+Libros V no lo puse en una carpeta porque es mucho codigo que deberia modificar 
+
+COSAS QUE FALTAN SOLUCIONAR: agregar modificar y eliminar al lado de los listados 
+ver si hacen algo Lista_libros2.php o Lista_libros.php
+Falta un index asi no vas de archivo en archivo por la carpeta y entra directamente desde un html 

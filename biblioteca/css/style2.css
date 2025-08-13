@@ -5,11 +5,12 @@
   }
   /*elijo el fondo que va a tener la pag web*/
   body {
-    background-image: url("fondo1.jpg");
+    background-image: url("fondo.jpg");
     /*centro la imagen , evito que se repita como mosaico 
     background-attachment: fixed;: Esto fija el fondo, lo que significa que la imagen no se desplazará junto con el contenido cuando haga scroll. 
     De esta manera,  la imagen permanece fija mientras el contenido se desplaza sobre ella.
      background-size: cover; la imagen ocupa todo la pantalla */
+     /*Esta es la animacion de aparecer creo */
     background-position:center ;
     background-repeat:no-repeat;
     background-size: cover;

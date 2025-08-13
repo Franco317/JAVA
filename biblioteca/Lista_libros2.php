@@ -1,4 +1,4 @@
-<?php 
+<?php //TAmbien tiene las opciones de libros
 
     $option=$_GET['option'];
     $Buscar=$_GET['Buscar'];

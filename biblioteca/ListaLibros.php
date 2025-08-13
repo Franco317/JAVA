@@ -1,4 +1,4 @@
-<?php 
+<?php //Tiene las opciones y se conecta con el html Listado 
 
     $option=$_GET['option'];
     $Buscar=$_GET['Buscar'];

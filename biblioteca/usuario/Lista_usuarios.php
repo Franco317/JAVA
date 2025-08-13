@@ -1,4 +1,5 @@
-<?php// imprime el listado de los libros 
+<?php // imprime el listado del usuario
+
 $bandera = 0;
 
 $Server="localhost";
@@ -9,26 +10,24 @@ $Pass="" ;
 $Connect=mysqli_connect($Server, $User ,$Pass , $Base)
 or die ("no hubo conexion");
 
-//parte nueva que se coneccta con el  html
+//parte nueva que se conecta con el  html
 
   
 
- $query="SELECT* FROM autores, libros , prestamos  WHERE 
- Id_libro = Libro_id and Id_autor = Autor_libro  ";
+ $query="SELECT* FROM usuarios WHERE 1";
  $resultado=mysqli_query($Connect,$query);
 
  echo"<table style=\border:5px solid grey\">";
  echo "<tr style=\"border:2px solid light-blue\">";
  echo"<td> ID </td>";
- echo"<td> Titulo </td>";
- echo"<td> Autor </td>";
- echo"<td> ISBN </td>";
- echo"<td> Genero </td>";
- echo"<td> Editorial </td>";
- echo"<td> Fecha de nacimmiento autor </td>";
- echo"<td> Nombre Usuario </td>";
- echo"<td> Acciones </td>";
-  //corregir esto
+ echo"<td> Nombre </td>";
+ echo"<td> Apellido  </td>";
+ echo"<td> FecNac  </td>";
+ echo"<td> DNI </td>";
+ echo"<td> Barrio </td>";
+ echo"<td> Domicilio </td>";
+ echo"<td> Telefono </td>";
+ echo"<td> Email </td>"; //corregir esto
  
  echo "</tr>";
 
@@ -42,12 +41,11 @@ or die ("no hubo conexion");
          echo "<td>".$registro[2]." "."</td>";
          echo "<td>".$registro[3]." "."</td>";
          echo "<td>".$registro[4]." "."</td>";
+         echo "<td>".$registro[5]." "."</td>";
          echo "<td>".$registro[6]." "."</td>";
          echo "<td>".$registro[7]." "."</td>";
-         echo "<td>".$registro[12]." "."</td>";
-         echo "<td>".$registro[14]." "."</td>";
-         echo "<td>".$registro[9]." "."</td>";
-         echo "<td>".$registro[10]." "."</td>";
+         echo "<td>".$registro[8]." "."</td>";
+        
          
          $bandera=0;
      }  
@@ -59,12 +57,11 @@ or die ("no hubo conexion");
          echo "<td>".$registro[2]." "."</td>";
          echo "<td>".$registro[3]." "."</td>";
          echo "<td>".$registro[4]." "."</td>";
+         echo "<td>".$registro[5]." "."</td>";
          echo "<td>".$registro[6]." "."</td>";
          echo "<td>".$registro[7]." "."</td>";
-         echo "<td>".$registro[12]." "."</td>";
-         echo "<td>".$registro[14]." "."</td>";
-         echo "<td>".$registro[9]." "."</td>";
-         echo "<td>".$registro[10]." "."</td>";
+         echo "<td>".$registro[8]." "."</td>";
+        
          
          $bandera=1;
      
